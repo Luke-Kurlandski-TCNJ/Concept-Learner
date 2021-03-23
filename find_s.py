@@ -145,11 +145,84 @@ def getTraceForFindS(linesInCsvFile, outputForPos):
 
     return hypotheses
 
-#
+def find_s_iteration(current_hypothesis, new_training_example):
+    """
+    Run a single iteration of find-s algorithm, ie, the "stuff" in the 
+        for loop, and return the new hypothesis.
+
+    Arguments:
+        current_hypothesis : list : the most current hypothesis to 
+            generalize from, default is 
+            ['NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL']
+        new_training_example : (list, str) : the next training example
+            to run through find-s algorithm
+    
+    Returns:
+        next_hypothesis : list : having learned from the new training 
+            example, returns the generalized hypothesis
+    """
+
+    pass
+
+def training_example_generator():
+    """
+    Generate random training example according to target concept
+        <Sunny, Warm, ?, ?, ?, ?>.
+
+    Returns:
+        example : (list, str) : a tuple of the six attribute values and 
+            the classification according to the target concept, 
+            i.e., the return will be of form
+            (
+                [Sky, AirTemp, Humidity, Wind, Water, Forecast], 
+                EnjoySport
+            ) 
+    """
+
+    pass
+
+def examples_required_to_learn(target_concept):
+    """
+    Determine how many random training examples are required to learn a
+        given target function using find-s algorithm.
+
+    Arguments:
+        target_concept : list : the target concept to learn
+
+    Returns:
+        num_examples: int : number of training examples required to 
+            learn target concept
+    """
+
+    num_examples = 0
+
+    while find_s_iteration(training_example_generator()) != target_concept:
+        num_examples += 1
+
+    return num_examples
+
+def experimental_question(n=100):
+    """
+    Write the number of examples required to learn the target concept
+        for n trials to a txt file.
+
+    Arguments:
+        n : int : number of trials to perform (should be >= 100)
+    """
+
+    target_concept = ['Sunny', 'Warm', '?', '?', '?', '?']
+
+    number_of_required_examples = [
+        examples_required_to_learn(target_concept) for i in range(n)
+    ]
+
+    with open('experimental_question.csv', 'w') as f:
+        write = csv.writer(f)
+        write.writerow(number_of_required_examples)
 
 #prints output of the Find-S algorithm
 #prints the trace needed for task 2 of the project
-def main():
+def Vihans_main():
 
     material = handleInput()
     outputForPos = material[0]
@@ -170,7 +243,10 @@ def main():
     print('----------------------------------------')
     print()
 
-#
+def main():
 
-main()
+    experimental_question(1000)
+    
+if __name__ == "__main__":
+    main()
 
