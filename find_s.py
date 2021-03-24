@@ -155,6 +155,29 @@ def getTraceForFindS(linesInCsvFile, outputForPos):
 
     return hypotheses
 
+#prints output of the Find-S algorithm
+#prints the trace needed for task 2 of the project
+def Vihans_main():
+
+    material = handleInput()
+    outputForPos = material[0]
+    linesInCsvFile = material[1]
+    linesInCsvFile.pop(0)
+    hypotheses = getTraceForFindS(linesInCsvFile, outputForPos)
+    finalHyp = hypotheses[len(hypotheses) - 1]
+
+    print()
+    print('----------------------------------------')
+    print('TRACE')
+    for x in range(0, len(hypotheses)):
+        string = 'h_' + str(x)
+        print(string, ' =', hypotheses[x])
+    #
+    print()
+    print('final hypothesis =', finalHyp)
+    print('----------------------------------------')
+    print()
+
 def find_s_iteration(current_hypothesis, new_training_example):
     """
     Run a single iteration of find-s algorithm, ie, the "stuff" in the 
@@ -229,29 +252,6 @@ def experimental_question(n=100):
     with open('experimental_question.csv', 'w') as f:
         write = csv.writer(f)
         write.writerow(number_of_required_examples)
-
-#prints output of the Find-S algorithm
-#prints the trace needed for task 2 of the project
-def Vihans_main():
-
-    material = handleInput()
-    outputForPos = material[0]
-    linesInCsvFile = material[1]
-    linesInCsvFile.pop(0)
-    hypotheses = getTraceForFindS(linesInCsvFile, outputForPos)
-    finalHyp = hypotheses[len(hypotheses) - 1]
-
-    print()
-    print('----------------------------------------')
-    print('TRACE')
-    for x in range(0, len(hypotheses)):
-        string = 'h_' + str(x)
-        print(string, ' =', hypotheses[x])
-    #
-    print()
-    print('final hypothesis =', finalHyp)
-    print('----------------------------------------')
-    print()
 
 def main():
 
