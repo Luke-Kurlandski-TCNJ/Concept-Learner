@@ -9,16 +9,10 @@ Suada Demirovic
 Luke Kurlandski
 '''
 
-'''
-WARNING: I believe that the code I wrote is working, but I want to continue testing
-it to make sure that we are done with tasks 1 & 2 of the project and that we can move
-on to other tasks of the project
-'''
-
 def handleInput():
 
-    #################################################################
-    
+    ###############################################################################################
+
     #ask the user which csv file he/she wants to use for concept learning
     
     print()
@@ -41,7 +35,7 @@ def handleInput():
         sys.exit(0)
     #
 
-    #################################################################
+    ###############################################################################################
     
     #read the csv file and find all the possible values that X (set of instances) can be mapped to
 
@@ -73,28 +67,44 @@ def handleInput():
 
     print()
     print('For this csv file, X ->', outputs)
+    print('For this csv file, the table header is', lines[0])
     print()
 
-    #################################################################
+    ###############################################################################################
     
-    #ask the user if they want X (set of instances) to map to a certain value for positive examples
-
-    outputForPos = ''
+    #decide what value can X (set of instances) map to for the positive examples
+        
     outputs = list(outputs)
-    value = input('For positive examples, do you want (X -> '  + outputs[0] + ')? ')
-
-    if(value.lower() == "yes"):
-        outputForPos = outputs[0]
-    elif(value.lower() == "no"):
+    condition1 = (outputs[0].lower() == "no") & (outputs[1].lower() == "yes")
+    condition2 = (outputs[0].lower() == "yes") & (outputs[1].lower() == "no")
+    outputForPos = ''
+    
+    if(condition1):
+    
         outputForPos = outputs[1]
+        
+    elif(condition2):
+    
+        outputForPos = outputs[0]
+        
     else:
-        print()
-        print('Invalid response was given. You can only type a yes or no.')
-        print()
-        sys.exit(0)
+        
+        value = input('For positive examples, do you want (X -> '  + outputs[0] + ')? ')
+        
+        if(value.lower() == "yes"):
+            outputForPos = outputs[0]
+        elif(value.lower() == "no"):
+            outputForPos = outputs[1]
+        else:
+            print()
+            print('Invalid response was given. You can only type a yes or no.')
+            print()
+            sys.exit(0)
+        #
+        
     #
 
-    #################################################################
+    ##############################################################################################
     
     return [outputForPos, lines]
 
