@@ -177,6 +177,8 @@ def Vihans_main():
     print('final hypothesis =', finalHyp)
     print('----------------------------------------')
     print()
+    
+############################################################################################################################
 
 def find_s_iteration(current_hypothesis, new_training_example):
     """
