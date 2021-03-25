@@ -290,9 +290,13 @@ def examples_required_to_learn(target_concept):
     """
 
     num_examples = 0
+    hyp = ['NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL']
 
-    while find_s_iteration(training_example_generator()) != target_concept:
+    while(hyp != target_concept):
+        a = training_example_generator()
         num_examples += 1
+        hyp = find_s_iteration(hyp, a)
+    #
 
     return num_examples
 
