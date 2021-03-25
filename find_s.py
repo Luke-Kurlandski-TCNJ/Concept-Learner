@@ -181,6 +181,7 @@ def Vihans_main():
 ############################################################################################################################
 
 def find_s_iteration(current_hypothesis, new_training_example):
+    
     """
     Run a single iteration of find-s algorithm, ie, the "stuff" in the 
         for loop, and return the new hypothesis.
@@ -197,9 +198,35 @@ def find_s_iteration(current_hypothesis, new_training_example):
             example, returns the generalized hypothesis
     """
 
-    pass
-
+    answer = new_training_example[1]
+    trainingEx = []
+    
+    for x in new_training_example[0]:
+        trainingEx.append(x)
+    #
+    
+    if(answer == 'no'):
+    
+        return current_hypothesis
+        
+    elif(answer == 'yes'):
+    
+        next_hypothesis = current_hypothesis
+        
+        for x in range(0, len(trainingEx)):
+            if(next_hypothesis[x] == 'NULL'):
+                next_hypothesis[x] = trainingEx[x]
+            elif(next_hypothesis[x] != trainingEx[x]):
+                next_hypothesis[x] = '?'
+            #
+        #
+        
+        return next_hypothesis
+        
+    #
+    
 def training_example_generator():
+    
     """
     Generate random training example according to target concept
         <Sunny, Warm, ?, ?, ?, ?>.
@@ -213,8 +240,41 @@ def training_example_generator():
                 EnjoySport
             ) 
     """
+    
+    SkyVals = ['Sunny', 'Cloudy', 'Rainy']
+    AirTempVals = ['Warm', 'Cold']
+    humidityVals = ['Normal', 'High']
+    windVals = ['Strong', 'Weak']
+    waterVals = ['Warm', 'Cool']
+    forecastVals = ['Same', 'Change']
+    categories = [SkyVals, AirTempVals, humidityVals, windVals, waterVals, forecastVals]
+    
+    randNum = random.randint(0, 31)
+    binaryNum = str(bin(randNum))[2:]
+    for x in range(0, 5 - len(binaryNum)):
+        binaryNum = '0' + binaryNum
+    #
+    randNum = random.randint(0, 2)
+    binaryNum = str(randNum) + binaryNum
+    
+    indices = []
+    for x in binaryNum:
+        indices.append(int(x))
+    #
 
-    pass
+    trainingEx = []
+    for x in range(0, len(categories)):
+        word = categories[x][indices[x]]
+        trainingEx.append(word)
+    #
+    
+    answer = 'no'
+    
+    if((trainingEx[0] == 'Sunny') & (trainingEx[1] == 'Warm')):
+        answer = 'yes'
+    #
+    
+    return (trainingEx, answer)
 
 def examples_required_to_learn(target_concept):
     """
