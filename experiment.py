@@ -74,7 +74,7 @@ def training_example_generator():
     windVals = ['Strong', 'Weak']
     waterVals = ['Warm', 'Cool']
     forecastVals = ['Same', 'Change']
-    categories = [akyVals, airTempVals, humidityVals, windVals, waterVals, forecastVals]
+    categories = [skyVals, airTempVals, humidityVals, windVals, waterVals, forecastVals]
     
     randNum = random.randint(0, 31)
     binaryNum = str(bin(randNum))[2:]
