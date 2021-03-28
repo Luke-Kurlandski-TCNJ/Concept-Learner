@@ -1,0 +1,34 @@
+# Authors: Vihan Patel, Luke Kurlandski, Suada Demirovic
+# File Name: Reflection
+# Description: A writeup reflecting on the assignment.
+
+(1) Anything positive you enjoyed or learned from this assignment
+    We enjoyed implementing the Find-S algorithm that we learned in class. It was interesting to see
+    the statistical component, and how many training examples it took for the exact target concept to 
+    be learned.
+(2) Anything negative you didn't like about this assignment
+    Nothing
+(3) Any parts of this assignment you found easy
+    None
+(4) Any parts of this assignment you found challenging or couldn't get working correctly
+    None
+(5) How your team functioned: 
+    The team functioned by communicating through GroupMe for coordinating meetings, discussing solutions,
+    and asking the other group members questions. A Zoom meeting was held to split up work and review code.
+    
+    What each team member contributed:
+    - Vihan: Tasks 1, 2, and 3. Documentation and testing.
+    - Luke: Experimental Question (plots and statistics). Documentation and testing.
+    - Suada: Writeup, documentation, and testing. Worked on task 3.
+
+    How the team communicated with each other: 
+    - GroupMe was used for immediate communication and working through any problems.
+    - Zoom was used for a more in-depth discussion about splitting up the work, reviewing the code, and
+    deciding how to proceed.
+
+    How team software development & design was accomplished:
+    - Team software development and design was accomplised by using GitHub and notifying other group members
+    when they committed their code so that other members could review it.
+
+(6) Any other remarks you want to make. 
+    None
