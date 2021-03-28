@@ -64,7 +64,7 @@ def handleInput():
     #
 
     print()
-    print('For this csv file, X ->', outputs)
+    print('The concept learning task maps X ->', outputs)
     print('For this csv file, the table header is', lines[0])
     print()
 
@@ -172,7 +172,7 @@ def main():
         print(string, ' =', hypotheses[x])
     #
     print()
-    print('final hypothesis =', finalHyp)
+    print('Final hypothesis =', finalHyp)
     print('----------------------------------------')
     print()
     
