@@ -38,6 +38,7 @@ details = {
 	"mode" : str(df[name].mode().to_list())[1:][:-1],
 	"mean" : df[name].mean(),
 	"stnd dev" : df[name].std()
+	"median" : df[name].median() # Please check
 }
 
 with open('experimental_details.csv', 'w') as f:  # You will need 'wb' mode in Python 2.x
