@@ -1,2 +1,2 @@
-n,min,max,mode,mean,stnd dev
-1000,2,108,20,26.98,15.147509598843206
+n,min,max,mode,mean,stnd dev,median
+1000,2,108,20,26.98,15.147509598843206,24.0
