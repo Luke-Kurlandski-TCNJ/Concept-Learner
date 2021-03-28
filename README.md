@@ -1,7 +1,20 @@
 # Concept-Learner
 Project 2 Concept Learner for CSC426-01: Machine Learning.
 
-## Build Instructions for the HPC:
+## Contents:
+The deliverables include:
+1. **find_s.py**: The implementation of the Find-S algorithm and verification that produces the trace found in class. (Tasks 1 and 2)
+2. **experiment.py**: Determines the number of random training examples required to exactly learn the target concept. (Task 3)
+3. **produce_plots.py**: Produces a frequency histogram of the number of examples required. (Experimental Question)
+4. **training_examples.csv**: A formatted .csv file with a header describing the features and the target concept, and each following row describing a training example.
+5. **experimental_details.csv**: The file where the calculated statistics (the number of times the experiment was run n, min, max, mode, median, mean, and standard deviation) were written to, from produce_plots.py. 
+6. **experimental_question.csv**: The file where the calculated number of examples required for each experiment was written to, from experiment.py. 
+7. **experimental_question.png**: The histogram produced from produce_plots.py of the number of training examples needed to learn the target conceot.
+8. **experimental_question.pdf**: A pdf containing the histogram and statistics.
+9. **Reflection**: A writeup reflecting on the assignment. 
+
+
+## Build and Command-Line Execution Instructions for the HPC:
 
 On OnDemand, go to your File Home Directory and upload the files in Concept-Learner. 
 
