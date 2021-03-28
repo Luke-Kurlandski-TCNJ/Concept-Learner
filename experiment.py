@@ -144,7 +144,7 @@ def examples_required_to_learn(target_concept):
 def experimental_question(n=100):
     """
     Write the number of examples required to learn the target concept
-        for n trials to a txt file.
+        for n trials to a csv file.
 
     Arguments:
         n : int : number of trials to perform (should be >= 100)
@@ -162,7 +162,7 @@ def experimental_question(n=100):
 
 def main():
     """
-    Acquire number of trial from user, or use 1000 as default then run.
+    Acquire the number of trials from the user, or use 1000 as default, and then run.
     """
 
     n_trials = int(sys.argv[1]) if len(sys.argv) > 1 else 1000
