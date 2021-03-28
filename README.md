@@ -20,8 +20,8 @@ Task 1, Task 2:
 	and print the trace on any similarly formatted csv file by 
 	supplying the name of the csv file as a command line argument.
 
-Task 3, Experimental Question
-	We have already provided the required historgram and data analysis, 
+Task 3, Experimental Question:
+	We have already provided the required histogram and data analysis, 
 	so there is no need for the professor to do any of this. However, in
 	the spirit of good documentation, we document this aspect of the 
 	program as well. 
