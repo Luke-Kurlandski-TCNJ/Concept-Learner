@@ -1,19 +1,33 @@
-import sys
-from os import path
-import csv
-import random
+"""
+Answers the experimental question: how many training examples will
+    find-s require to learn the target concept: 
+    <Sunny, Warm, ?, ?, ?, ?>
 
-'''
-Vihan Patel
-Suada Demirovic
-Luke Kurlandski
-'''
+Runs the experiment and produces a csv file which later can be used to
+    conduct statistical analysis.
+
+Run this program from the command line like
+
+    > python3 experiment.py number_of_trials
+
+    where number_of_trials is an integer that default to 1000 if nothing
+        is specified
+
+Vihan Patel, Suada Demirovic, Luke Kurlandski
+
+March 2021
+"""
+
+import csv
+from os import path
+import random
+import sys
 
 def find_s_iteration(current_hypothesis, new_training_example):
-    
     """
     Run a single iteration of find-s algorithm, ie, the "stuff" in the
         for loop, and return the new hypothesis.
+
     Arguments:
         current_hypothesis : list : the most current hypothesis to
             generalize from, default is
@@ -54,10 +68,10 @@ def find_s_iteration(current_hypothesis, new_training_example):
     #
     
 def training_example_generator():
-    
     """
     Generate random training example according to target concept
         <Sunny, Warm, ?, ?, ?, ?>.
+
     Returns:
         example : (list, str) : a tuple of the six attribute values and
             the classification according to the target concept,
@@ -97,7 +111,7 @@ def training_example_generator():
     
     answer = 'no'
     
-    if((trainingEx[0] == 'Sunny') & (trainingEx[1] == 'Warm')):
+    if((trainingEx[0] == 'Sunny') and (trainingEx[1] == 'Warm')):   # replaced & with and
         answer = 'yes'
     #
     
@@ -107,8 +121,10 @@ def examples_required_to_learn(target_concept):
     """
     Determine how many random training examples are required to learn a
         given target function using find-s algorithm.
+
     Arguments:
         target_concept : list : the target concept to learn
+
     Returns:
         num_examples: int : number of training examples required to
             learn target concept
@@ -129,6 +145,7 @@ def experimental_question(n=100):
     """
     Write the number of examples required to learn the target concept
         for n trials to a txt file.
+
     Arguments:
         n : int : number of trials to perform (should be >= 100)
     """
@@ -144,9 +161,12 @@ def experimental_question(n=100):
         write.writerow(number_of_required_examples)
 
 def main():
+    """
+    Acquire number of trial from user, or use 1000 as default then run.
+    """
 
-    experimental_question(1000)
+    n_trials = int(sys.argv[1]) if len(sys.argv) > 1 else 1000
+    experimental_question(n_trials)
     
 if __name__ == "__main__":
-
     main()

@@ -1,13 +1,25 @@
-import sys
-from os import path
-import csv
-import random
+"""
+Implementation of the find-s algorithm and vertification that it
+    produces the trace found in class.
 
-'''
-Vihan Patel
-Suada Demirovic
-Luke Kurlandski
-'''
+Run this program from the command line like
+
+    > python3 find_s.py training_examples.csv
+
+    where training_examples.csv is a formatted csv file with a header
+        describing the features and the target concept, then each row
+        describing a training example that defaults to 
+        training_examples.csv if nothing is specified.
+
+Vihan Patel, Suada Demirovic, Luke Kurlandski
+
+March 2021
+"""
+
+import csv
+from os import path
+import random
+import sys
 
 def handleInput():
 
@@ -15,25 +27,11 @@ def handleInput():
 
     #ask the user which csv file he/she wants to use for concept learning
     
-    print()
+    file = sys.argv[1] if len(sys.argv) > 1 else 'training_examples.csv'
 
-    file = input('Enter a relative or absolute path to a csv file: ')
-    index = file.find('.csv')
-    
-    if(index == len(file) - 4):
-        value = path.exists(file)
-        if(value == False):
-            print()
-            print('Sorry,', file, 'does not exist.')
-            print()
-            sys.exit(0)
-        #
-    else:
-        print()
-        print('Sorry,', file, 'is an invalid input.')
-        print()
-        sys.exit(0)
-    #
+    if not path.exists(file):
+        print(file, "could not be not found")
+        sys.exit()
 
     ###############################################################################################
     
