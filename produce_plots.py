@@ -37,7 +37,7 @@ details = {
 	"max" : df[name].max(),
 	"mode" : str(df[name].mode().to_list())[1:][:-1],
 	"mean" : df[name].mean(),
-	"stnd dev" : df[name].std()
+	"stnd dev" : df[name].std(),
 	"median" : df[name].median() # Please check
 }
 
