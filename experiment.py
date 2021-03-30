@@ -1,21 +1,26 @@
 """
-Answers the experimental question: how many training examples will
-    find-s require to learn the target concept: 
-    <Sunny, Warm, ?, ?, ?, ?>
+Vihan Patel, Suada Demirovic, Luke Kurlandski
+March 2021
 
-Runs the experiment and produces a csv file which later can be used to
-    conduct statistical analysis.
+Answers the experimental question: how many training examples will Find-S require to learn 
+the target concept: <Sunny, Warm, ?, ?, ?, ?>
+
+Runs the experiment and produces a csv file which later can be used to conduct statistical 
+analysis.
+
+Structural Description:
+    find_s_iteration() runs an iteration of the Find-S algorithm and returns the new hypothesis.
+    training_example_generator() generates random instances and classifies them according to 
+    the target concept. examples_required_to_learn() calculates the total number of examples
+    needed to learn the target concept and experimental_question() writes this number to a 
+    .csv file.
 
 Run this program from the command line like
 
     > python3 experiment.py number_of_trials
 
-    where number_of_trials is an integer that default to 1000 if nothing
-        is specified
+    where number_of_trials is an integer that default to 1000 if nothing is specified
 
-Vihan Patel, Suada Demirovic, Luke Kurlandski
-
-March 2021
 """
 
 import csv
@@ -111,7 +116,7 @@ def training_example_generator():
     
     answer = 'no'
     
-    if((trainingEx[0] == 'Sunny') and (trainingEx[1] == 'Warm')):   # replaced & with and
+    if((trainingEx[0] == 'Sunny') and (trainingEx[1] == 'Warm')): 
         answer = 'yes'
     #
     

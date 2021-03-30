@@ -31,4 +31,6 @@
     when they committed their code so that other members could review it.
 
 (6) Any other remarks you want to make. 
-    None
+    We find it interesting that the random training data generation process produces a heavily imbalanced 
+    dataset, i.e., there are many more negative examples than positive ones. The model could certainly 
+    learn the target function faster if the training data was more balanced. 

@@ -1,19 +1,23 @@
 """
-Implementation of the find-s algorithm and vertification that it
-    produces the trace found in class.
+Vihan Patel, Suada Demirovic, Luke Kurlandski
+March 2021
+
+Implementation of the Find-S algorithm and vertification that it produces the trace found in class.
+
+Structural description: 
+    handleInput() reads the training examples from a .csv file and defines the values that X
+    can be mapped to. getNewHyp() makes necessary changes to a hypothesis when a new positive
+    example is passed through. getTraceForFindS() verifies the implementation of the Find-S 
+    algorithm and main() prints the trace.
 
 Run this program from the command line like
 
     > python3 find_s.py training_examples.csv
 
-    where training_examples.csv is a formatted csv file with a header
-        describing the features and the target concept, then each row
-        describing a training example that defaults to 
-        training_examples.csv if nothing is specified.
+    where training_examples.csv is a formatted csv file with a header describing the features 
+    and the target concept, then each row describing a training example that defaults to 
+    training_examples.csv if nothing is specified.
 
-Vihan Patel, Suada Demirovic, Luke Kurlandski
-
-March 2021
 """
 
 import csv
