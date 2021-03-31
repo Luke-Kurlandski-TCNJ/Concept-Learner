@@ -21,7 +21,7 @@ File needed for D3:
 
 D3: 
 1. **experimental_details.csv**: The file where the calculated statistics (the number of times the experiment was run n, min, max, mode, median, mean, and standard deviation) were written to, from produce_plots.py. 
-2. **experimental_question.png**: The histogram produced from produce_plots.py of the number of training examples needed to learn the target concept.
+2. **experimental_question.png**: The histogram produced from produce_plots.py
 3. **experimental_question.pdf**: A pdf containing necessary statistics and a histogram. (Experimental Question)
 
 D4:
