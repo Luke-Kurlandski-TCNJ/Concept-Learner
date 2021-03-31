@@ -61,7 +61,7 @@ Task 3, Experimental Question:
 	Then you would type 'python experiment.py 101'. If an experiment is performed, 
 	a csv file containing experimental data will be outputted.
 	
-	To produce the histogram and stats, in the command line type 'python get_plot_and_stats.py'. Press the return key.
+	To produce the histogram and stats, in the command line type 'python3 get_plot_and_stats.py'. Press the return key.
 
 	The histogram relies on pandas, so make sure that is installed. Take the following steps below.
 	1. Type 'curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py' in the command line. Press the return key.
