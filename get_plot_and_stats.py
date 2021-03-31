@@ -19,9 +19,18 @@ Run this program from the command line like
 import csv
 import pandas as pd
 import os
+import sys
 
 #check if experiment_results.csv exists
+value = os.path.exists("experiment_results.csv")
 
+if(value == False):
+    print()
+    print('The file, experiment_results.csv, does not exist.')
+    print('Please run experiment.py.')
+    print()
+    sys.exit(0)
+#
 
 # Get the produced data.
 df = pd.read_csv('experiment_results.csv', header=None).transpose()
