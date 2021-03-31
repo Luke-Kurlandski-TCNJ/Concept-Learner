@@ -14,7 +14,7 @@ File needed for D1 & D2:
 D1 & D2:
 1. **find_s.py**: contains implementation of Find-S algorithm and prints the trace needed for Task 2
 2. **experiment.py**: contains implementation of Task 3 and counts the # of training examples needed to learn a target concept for each trial in an experiment
-3. **produce_plots.py**: produces a frequency histogram of the number of examples required for the experimental question
+3. **produce_plots.py**: produces a frequency histogram for the experimental question
 
 File needed for D3:
 1. **experimental_question.csv**: this file serves as an output of experiment.py
