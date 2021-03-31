@@ -20,7 +20,7 @@ import csv
 import pandas as pd
 
 # Get the produced data.
-df = pd.read_csv('experimental_question.csv', header=None).transpose()
+df = pd.read_csv('experiment_results.csv', header=None).transpose()
 name = 'Histogram of Number Training Examples to Learn Target Concept\nn_trials=' + str(len(df.index))
 df.columns = [name]
 
