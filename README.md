@@ -22,7 +22,7 @@ File needed for D3:
 D3: 
 1. **statistics.csv**: The file where the calculated statistics (the number of times the experiment was run, min, max, mode, median, mean, and standard deviation) were written to, from get_plot_and_stats.py. 
 2. **histogram.png**: The histogram produced from get_plot_and_stats.py
-3. **experimental_question.pdf**: contains histogram from experimental_question.png and statistics from experimental_details.csv
+3. **experimental_question.pdf**: contains histogram from histogram.png and statistics from statistics.csv
 
 D4:
 1. **Reflection**: A writeup for D4.
