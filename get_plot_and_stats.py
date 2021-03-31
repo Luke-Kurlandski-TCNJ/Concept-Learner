@@ -27,7 +27,7 @@ df.columns = [name]
 # Produce an image and save it to a .png file.
 hist = df.hist([name], bins=df[name].nunique())
 fig = hist[0][0].get_figure()
-fig.savefig('experimental_question.png')
+fig.savefig('histogram.png')
 
 # Record statistical information in a .csv file.
 details = {
@@ -40,7 +40,7 @@ details = {
 	"median" : df[name].median()
 }
 
-with open('experimental_details.csv', 'w') as f:  # You will need 'wb' mode in Python 2.x
+with open('statistics.csv', 'w') as f:  # You will need 'wb' mode in Python 2.x
     w = csv.DictWriter(f, details.keys())
     w.writeheader()
     w.writerow(details)
