@@ -53,7 +53,4 @@ Task 3, Experimental Question:
 	stats, in the command line type:
 		> python produce_plots.py
 
-	The histogram relies on pandas, so make sure that is installed by typing:
-		> curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-		> python get-pip.py
-		> pip install pandas
+	The histogram relies on pandas, so make sure that is installed.
