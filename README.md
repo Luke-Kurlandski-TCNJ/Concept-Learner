@@ -7,16 +7,25 @@ Project 2 Concept Learner for CSC426-01: Machine Learning.
 
 ## Contents:
 The deliverables include:
-1. **find_s.py**: The implementation of the Find-S algorithm and verification that produces the trace found in class. (Tasks 1 and 2)
-	i. **training_examples.csv**: A formatted .csv file with a header describing the attributes and the target concept, and each following row describing a training example.
-2. **experiment.py**: Determines the number of random training examples required to exactly learn the target concept. (Task 3)
-	i. **experimental_question.csv**: The file where the calculated number of examples required to learn the target concept for each experiment was written to, from experiment.py. 
-3. **produce_plots.py**: Produces a frequency histogram of the number of examples required. (Experimental Question)
-	i. **experimental_details.csv**: The file where the calculated statistics (the number of times the experiment was run n, min, max, mode, median, mean, and standard deviation) were written to, from produce_plots.py. 
-	ii. **experimental_question.png**: The histogram produced from produce_plots.py of the number of training examples needed to learn the target concept.
-4. **experimental_question.pdf**: A pdf containing the histogram and statistics. (Experimental Question)
-5. **Reflection**: A writeup reflecting on the assignment. 
 
+File needed for D1 & D2:
+1. **training_examples.csv**: A formatted .csv file with a header describing the attributes and the target concept, and each following row describing a training example.
+
+D1 & D2:
+1. **find_s.py**: contains implementation of Find-S algorithm and prints the trace needed for Task 2
+2. **experiment.py**: contains implementation of Task 3 and counts the # of training examples needed to learn a target concept for each trial in an experiment
+3. **produce_plots.py**: produces a frequency histogram of the number of examples required. (Experimental Question)
+
+File needed for D3:
+1. **experimental_question.csv**: The file where the calculated number of examples required to learn the target concept for each experiment was written to, from experiment.py.
+
+D3:
+1. **experimental_details.csv**: The file where the calculated statistics (the number of times the experiment was run n, min, max, mode, median, mean, and standard deviation) were written to, from produce_plots.py. 
+2. **experimental_question.png**: The histogram produced from produce_plots.py of the number of training examples needed to learn the target concept.
+3. **experimental_question.pdf**: A pdf containing necessary statistics and a histogram. (Experimental Question)
+
+D4:
+1. **Reflection**: A writeup for D4.
 
 ## Build and Command-Line Execution Instructions for the HPC:
 
@@ -35,17 +44,20 @@ Task 1, Task 2:
 	training_examples.csv. If desired, you can run the find-s algorithm
 	and print the trace on any similarly formatted csv file by 
 	supplying the name of the csv file as a command line argument. Suppose
-	you have a csv file called x.csv. Then you can type 'python find_s.py x.csv'.
+	you have a csv file called x.csv. Then you can type 'python find_s.py x.csv'
+	and press the return key afterwards.
 
 Task 3, Experimental Question:
 	
 	In the command line, type 'python experiment.py'. Press the return key.
 
-	This will automatically perform an experiment with 1000 trials, but 
+	This will automatically perform an experiment with 100 trials, but 
 	the number of trials can be controlled by specifying an integer as a
-	command line argument. This will output a csv file containing the 
-	data collected from the experiment. To produce the histogram and 
-	stats, in the command line type 'python produce_plots.py'. Press the return key.
+	command line argument. If the number specified is less than 100, 
+	no experiment will be run. If an experiment is performed, a csv file
+	containing experimental data will be outputted.
+	
+	To produce the histogram and stats, in the command line type 'python produce_plots.py'. Press the return key.
 
 	The histogram relies on pandas, so make sure that is installed. Take the
 	following steps below.
