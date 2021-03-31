@@ -35,7 +35,7 @@ Before running any of the code, ensure that the correct version of Python
 is installed. Take the following steps.
 1. Type 'module add python' in the command line. Press the return key.
 2. Type 'python --version' in the command line. Press the return key.
-You will get to know if Python 3.6.0 is installed.
+You will get to know that Python 3.6.0 is installed.
 
 Task 1, Task 2: 
 	
