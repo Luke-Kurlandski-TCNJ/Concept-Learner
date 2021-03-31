@@ -61,8 +61,7 @@ Task 3, Experimental Question:
 	
 	To produce the histogram and stats, in the command line type 'python produce_plots.py'. Press the return key.
 
-	The histogram relies on pandas, so make sure that is installed. Take the
-	following steps below.
+	The histogram relies on pandas, so make sure that is installed. Take the following steps below.
 	1. Type 'curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py' in the command line. Press the return key.
 	2. Type 'python get-pip.py' in the command line. Press the return key.
 	3. Type 'pip install pandas' in the command line. Press the return key.
