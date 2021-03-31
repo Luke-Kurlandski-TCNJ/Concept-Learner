@@ -18,6 +18,10 @@ Run this program from the command line like
 
 import csv
 import pandas as pd
+import os
+
+#check if experiment_results.csv exists
+
 
 # Get the produced data.
 df = pd.read_csv('experiment_results.csv', header=None).transpose()
