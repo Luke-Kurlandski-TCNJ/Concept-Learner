@@ -162,7 +162,7 @@ def experimental_question(n=100):
         examples_required_to_learn(target_concept) for i in range(n)
     ]
 
-    with open('experimental_question.csv', 'w') as f:
+    with open('experiment_results.csv', 'w') as f:
         write = csv.writer(f)
         write.writerow(number_of_required_examples)
 
