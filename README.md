@@ -24,12 +24,12 @@ On OnDemand, go to your File Home Directory and upload the files in Concept-Lear
 
 Before running any of the code, ensure that the correct version of Python 
 is installed. Take the following steps.
-1. Type 'module add python' in the command line.
-2. Type 'python --version' in the command line.
+1. Type 'module add python' in the command line. Press the return key.
+2. Type 'python --version' in the command line. Press the return key.
 You will get to know if Python 3.6.0 is installed.
 
 Task 1, Task 2: 
-	In the command line, type 'python find_s.py'.
+	In the command line, type 'python find_s.py'. Press the return key.
 
 	This will automatically use the training data contained in the file
 	training_examples.csv. If desired, you can run the find-s algorithm
@@ -39,16 +39,16 @@ Task 1, Task 2:
 
 Task 3, Experimental Question:
 	
-	In the command line type 'python experiment.py'.
+	In the command line, type 'python experiment.py'. Press the return key.
 
 	This will automatically perform an experiment with 1000 trials, but 
 	the number of trials can be controlled by specifying an integer as a
 	command line argument. This will output a csv file containing the 
 	data collected from the experiment. To produce the histogram and 
-	stats, in the command line type 'python produce_plots.py'.
+	stats, in the command line type 'python produce_plots.py'. Press the return key.
 
 	The histogram relies on pandas, so make sure that is installed. Take the
 	following steps below.
-	1. Type 'curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py' in the command line.
-	2. Type 'python get-pip.py' in the command line.
-	3. Type 'pip install pandas' in the command line.
+	1. Type 'curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py' in the command line. Press the return key.
+	2. Type 'python get-pip.py' in the command line. Press the return key.
+	3. Type 'pip install pandas' in the command line. Press the return key.
