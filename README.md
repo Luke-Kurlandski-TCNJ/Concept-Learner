@@ -29,7 +29,7 @@ D4:
 
 ## Build and Command-Line Execution Instructions for the HPC:
 
-On OnDemand, go to your File Home Directory and upload the files in Concept-Learner. (NOTE: We should upload the folder, Concept-Learner, and instead access the folder rather than uploading each file present in the folder to the home directory) (We should give instructions on how to access Concept-Learner folder)
+On OnDemand, go to your File Home Directory and upload the files in Concept-Learner. (TODO: We should upload the folder, Concept-Learner, and instead access the folder rather than uploading each file present in the folder to the home directory) (We should give instructions on how to access Concept-Learner folder)
 
 Before running any of the code, ensure that the correct version of Python 
 is installed. Take the following steps.
