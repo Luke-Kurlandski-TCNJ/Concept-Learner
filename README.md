@@ -14,15 +14,15 @@ File needed for D1 & D2:
 D1 & D2:
 1. **find_s.py**: contains implementation of Find-S algorithm and prints the trace needed for Task 2
 2. **experiment.py**: contains implementation of Task 3 and counts the # of training examples needed to learn a target concept for each trial in an experiment
-3. **get_plot_and_stats.py**: produces statistics and frequency histogram for the experimental question
 
 File needed for D3:
 1. **experimental_question.csv**: this file serves as an output of experiment.py
 
 D3: 
-1. **experimental_details.csv**: The file where the calculated statistics (the number of times the experiment was run n, min, max, mode, median, mean, and standard deviation) were written to, from get_plot_and_stats.py. 
-2. **experimental_question.png**: The histogram produced from get_plot_and_stats.py
-3. **experimental_question.pdf**: contains histogram from experimental_question.png and statistics from experimental_details.csv
+1. **get_plot_and_stats.py**: produces statistics and frequency histogram for the experimental question
+2. **experimental_details.csv**: The file where the calculated statistics (the number of times the experiment was run n, min, max, mode, median, mean, and standard deviation) were written to, from get_plot_and_stats.py. 
+3. **experimental_question.png**: The histogram produced from get_plot_and_stats.py
+4. **experimental_question.pdf**: contains histogram from experimental_question.png and statistics from experimental_details.csv
 
 D4:
 1. **Reflection**: A writeup for D4.
