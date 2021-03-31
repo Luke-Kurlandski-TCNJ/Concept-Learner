@@ -38,6 +38,7 @@ is installed. Take the following steps.
 You will get to know if Python 3.6.0 is installed.
 
 Task 1, Task 2: 
+	
 	In the command line, type 'python3 find_s.py'. Press the return key.
 
 	This will automatically use the training data contained in the file
