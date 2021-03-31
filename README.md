@@ -29,13 +29,13 @@ D4:
 
 ## Build and Command-Line Execution Instructions for the HPC:
 
-On OnDemand, go to your File Home Directory and upload the files in Concept-Learner. (TODO: We should upload the folder, Concept-Learner, and instead access the folder rather than uploading each file present in the folder to the home directory) (We should give instructions on how to access Concept-Learner folder)
-
-Before running any of the code, ensure that the correct version of Python 
-is installed. Take the following steps.
-1. Type 'module add python' in the command line. Press the return key.
-2. Type 'python --version' in the command line. Press the return key.
-You will get to know that Python 3.6.0 is installed.
+1) On OnDemand, go to your File Home Directory.
+2) Upload Concept-Learner.tar.gz to your File Home Directory.
+4) Type 'module add python' in the command line. Press the return key.
+5) Type 'python --version' in the command line. Press the return key. You will get to know that Python 3.6.0 is installed.
+6) Type 'tar -xzf ?' in the command line. The symbol, ?, represents the absolute path for Concept-Learner.tar.gz. Press the return key.
+7) Figure out the absolute path for a folder called Concept-Learner.
+8) Type 'cd ?' in the command line. The symbol, ?, represents the absolute path for a folder called Concept-Learner. Press the return key.
 
 Task 1, Task 2: 
 	
