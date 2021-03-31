@@ -46,7 +46,7 @@ Task 1, Task 2:
 	supplying the name of the csv file as a command line argument. Suppose
 	you have a csv file called x.csv. Then you can type 'python3 find_s.py x.csv'
 	and press the return key afterwards. Suppose you have a csv file with a
-	name containing spaces in it (i.e. 'a - Sheet1.csv'). Then you would type
+	name containing spaces in it (i.e. a - Sheet1.csv). Then you would type
 	'python3 find_s.py "a - Sheet1.csv"'.
 
 Task 3, Experimental Question:
