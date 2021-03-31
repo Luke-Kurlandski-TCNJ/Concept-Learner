@@ -52,13 +52,13 @@ Task 1, Task 2:
 
 Task 3, Experimental Question:
 	
-	In the command line, type 'python experiment.py'. Press the return key.
+	In the command line, type 'python3 experiment.py'. Press the return key.
 
 	This will automatically perform an experiment with 100 trials, but 
 	the number of trials can be controlled by specifying an integer as a
 	command line argument. If the number specified is less than 100, 
 	no experiment will be run. Say that you wanted to run 101 trials in an experiment.
-	Then you would type 'python experiment.py 101'. If an experiment is performed, 
+	Then you would type 'python3 experiment.py 101'. If an experiment is performed, 
 	a csv file containing experimental data will be outputted.
 	
 	To produce the histogram and stats, in the command line type 'python3 get_plot_and_stats.py'. Press the return key.
