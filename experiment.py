@@ -9,18 +9,11 @@ Runs the experiment and produces a csv file which later can be used to conduct s
 analysis.
 
 Structural Description:
-    find_s_iteration() runs an iteration of the Find-S algorithm and returns the new hypothesis.
+    find_s_iteration() runs an iteration of the Find-S algorithm and returns a new hypothesis.
     training_example_generator() generates random instances and classifies them according to 
-    the target concept. examples_required_to_learn() calculates the total number of examples
+    a target concept. examples_required_to_learn() calculates the total number of examples
     needed to learn the target concept and experimental_question() writes this number to a 
     .csv file.
-
-Run this program from the command line like
-
-    > python3 experiment.py number_of_trials
-
-    where number_of_trials is an integer that default to 100 if nothing is specified
-    If number_of_trials < 100, then no experiment will be conducted.
 
 """
 
