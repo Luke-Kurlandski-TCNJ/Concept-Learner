@@ -61,6 +61,10 @@ Task 3, Experimental Question:
 	Then you would type 'python3 experiment.py 101'. If an experiment is performed, 
 	a csv file containing experimental data will be outputted.
 	
+	Users do not need to run the program to produce the histogram and stats.
+	The histogram and stats have already been produced before hand.
+	We used a third party software, pandas, to perform this aspect of the project. 
+	
 	To produce the histogram and stats, in the command line type 'python3 get_plot_and_stats.py'. Press the return key.
 
 	The histogram relies on pandas, so make sure that is installed. Take the following steps below.
