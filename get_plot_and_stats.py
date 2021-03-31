@@ -6,7 +6,7 @@ This script is used to produce the plots which accompany the submission.
 
 Note that this script uses the third party library pandas, but that was
 	specified as being acceptable by Dr. Bloodgood. Requires the 
-	experimental_question.csv file to exist and be formatted as
+	experiment_results.csv file to exist and be formatted as
 	a single line of comma-separated values. Produces a .csv and .png 
 	file. 
 
