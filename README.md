@@ -38,13 +38,13 @@ is installed. Take the following steps.
 You will get to know if Python 3.6.0 is installed.
 
 Task 1, Task 2: 
-	In the command line, type 'python find_s.py'. Press the return key.
+	In the command line, type 'python3 find_s.py'. Press the return key.
 
 	This will automatically use the training data contained in the file
 	training_examples.csv. If desired, you can run the find-s algorithm
 	and print the trace on any similarly formatted csv file by 
 	supplying the name of the csv file as a command line argument. Suppose
-	you have a csv file called x.csv. Then you can type 'python find_s.py x.csv'
+	you have a csv file called x.csv. Then you can type 'python3 find_s.py x.csv'
 	and press the return key afterwards.
 
 Task 3, Experimental Question:
