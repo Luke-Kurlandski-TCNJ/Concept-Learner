@@ -19,7 +19,8 @@ Run this program from the command line like
 
     > python3 experiment.py number_of_trials
 
-    where number_of_trials is an integer that default to 1000 if nothing is specified
+    where number_of_trials is an integer that default to 100 if nothing is specified
+    If number_of_trials < 100, then no experiment will be conducted.
 
 """
 
@@ -167,10 +168,17 @@ def experimental_question(n=100):
 
 def main():
     """
-    Acquire the number of trials from the user, or use 1000 as default, and then run.
+    Acquire the number of trials from the user, or use 100 as default, and then run.
+    If the number of trials that the user wants to run is < 100, then no experiment will be conducted.
     """
 
-    n_trials = int(sys.argv[1]) if len(sys.argv) > 1 else 1000
+    n_trials = int(sys.argv[1]) if len(sys.argv) > 1 else 100
+    
+    if(n_trials < 100):
+        print('The experiment needs at least 100 trials')
+        return
+    #
+    
     experimental_question(n_trials)
     
 if __name__ == "__main__":
