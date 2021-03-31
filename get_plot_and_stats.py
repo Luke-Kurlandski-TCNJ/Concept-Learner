@@ -12,7 +12,7 @@ Note that this script uses the third party library pandas, but that was
 
 Run this program from the command line like
 
-    > python3 produce_plots.py
+    > python3 get_plot_and_stats.py
 
 """
 
